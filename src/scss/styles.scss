@@ -10,12 +10,18 @@ body {
   height: 100vh;
   font-family: "DM Serif Display", monospace;
   .header{
+    position: fixed;
+    left: 0;
+    right: 0;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 50px;
     .nav{
+      height: 50px;
+      width: auto;
       display: flex;
       align-items: center;
+      background-color: white;
       &:hover{
         cursor: pointer;
         background-color: #e0e1e2;
@@ -52,7 +58,11 @@ body {
       
       }
       .second{
+        height: 50px;
+        background-color: white;
         .second_first{
+          
+          left: 0;
           padding-left: 15px;
         }
         &:hover{
@@ -62,7 +72,7 @@ body {
         
         
       }
-      
+    }
     }
     .second{
       display: flex;
@@ -78,11 +88,12 @@ body {
         margin-bottom: 12px;
       }
     }
-  }
+  
 
 
   main{
     display: grid;
+    padding-top: 50px;
     // height: 100vh;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(2,minmax(420px,1fr));
